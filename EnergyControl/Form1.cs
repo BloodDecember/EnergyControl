@@ -41,10 +41,16 @@ namespace EnergyControl
         private void button1_Click(object sender, EventArgs e)
         {
             var service = OpenSheet();
+            progressBar1.PerformStep();
             UpdateRow(service, textBox1.Text);
 
+            progressBar1.PerformStep();
+
             textBox2.Text = GetPreDate(service, "B1:B");
+            progressBar1.PerformStep();
             textBox4.Text = GetPreDate(service, "A1:A");
+
+            progressBar1.PerformStep();
         }
 
         static SheetsService OpenSheet()

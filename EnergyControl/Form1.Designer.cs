@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // textBox1
@@ -127,11 +128,20 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Последнее внесение";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 132);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(258, 23);
+            this.progressBar1.Step = 25;
+            this.progressBar1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button2);
@@ -162,6 +172,7 @@
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
